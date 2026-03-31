@@ -13,9 +13,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Metacognition 2026 | Robotics & Coding Event',
-  description: 'Join the ultimate robotics and coding showdown at Galgotias College of Engineering and Technology. Compete in IoT Innovation, Rocket League RC, RoboChef, and more!',
-  generator: 'v0.app',
+  title: 'Metacognition | AI & Robotics Event',
+  description: 'Join the ultimate AI and robotics showdown at Galgotias College of Engineering and Technology. Compete in AI Innovation, Rocket League RC, RoboChef, and more!',
+  generator: 'Metacognition',
   icons: {
     icon: [
       {
