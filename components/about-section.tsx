@@ -6,8 +6,8 @@ import { Code2, Cpu, Users, Award, Sparkles, Rocket } from "lucide-react"
 const stats = [
   { value: 500, suffix: "+", label: "Participants", icon: Users },
   { value: 50, suffix: "+", label: "Teams", icon: Code2 },
-  { value: 4, suffix: "", label: "Competitions", icon: Cpu },
-  { value: 2.65, suffix: "L+", label: "Prize Pool", icon: Award },
+  { value: 5, suffix: "", label: "Competitions", icon: Cpu },
+  { value: 1.2, suffix: "L+", label: "Prize Pool", icon: Award },
 ]
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
@@ -59,7 +59,7 @@ export function AboutSection() {
           {/* Left side - Content */}
           <div className="text-center lg:text-left">
             <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-accent/10 text-accent text-xs sm:text-sm font-mono mb-3 sm:mb-4">
-              About Enthiran
+              About Metacognition
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-balance">
               Where <span className="text-primary">Innovation</span> Meets{" "}
@@ -67,9 +67,8 @@ export function AboutSection() {
             </h2>
             <div className="space-y-3 sm:space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
               <p>
-                <span className="text-foreground font-semibold">Enthiran</span> - named after the Tamil word for
-                &quot;Robot&quot; - is the flagship technical event organized by the Robotics & Coding Club of
-                Galgotias College of Engineering and Technology.
+                <span className="text-foreground font-semibold">Metacognition</span> - is the flagship technical event hosted by the Robotics & Coding Club of
+                Galgotias College of Engineering and Technology.  
               </p>
               <p>
                 Since our inception, we&apos;ve been at the forefront of fostering innovation, encouraging hands-on

@@ -7,45 +7,21 @@ const timeline = [
   {
     date: "Apr 1, 2026",
     title: "Registrations Open",
-    description: "Early bird registration begins with discounted entry fees",
+    description: "Registration for the event has started",
+    status: "completed",
+  },
+  {
+    date: "Apr 05, 2026",
+    title: "Registration Deadline",
+    description: "Final date to register for the event",
     status: "upcoming",
   },
   {
-    date: "Apr 20, 2026",
-    title: "Team Formation Deadline",
-    description: "Final date to form teams and submit member details",
+    date: "Apr 07, 2026",
+    title: "Competition Begins",
+    description: "Competition begins for all the events",
     status: "upcoming",
-  },
-  {
-    date: "May 1, 2026",
-    title: "Problem Statements Released",
-    description: "IoT Innovation and RoboChef problem statements announced",
-    status: "upcoming",
-  },
-  {
-    date: "May 10, 2026",
-    title: "Technical Workshop",
-    description: "Pre-event workshop on robotics fundamentals and safety protocols",
-    status: "upcoming",
-  },
-  {
-    date: "May 15, 2026",
-    title: "Day 1 - Inauguration",
-    description: "Opening ceremony, team briefings, and IoT Innovation kickoff",
-    status: "upcoming",
-  },
-  {
-    date: "May 16, 2026",
-    title: "Day 2 - Battle Day",
-    description: "Rocket League RC and Robo Wars tournaments begin",
-    status: "upcoming",
-  },
-  {
-    date: "May 17, 2026",
-    title: "Day 3 - Finals & Awards",
-    description: "Grand finals, project presentations, and award ceremony",
-    status: "upcoming",
-  },
+  }
 ]
 
 function TimelineItem({ item, index }: { item: typeof timeline[0]; index: number }) {
@@ -69,19 +45,17 @@ function TimelineItem({ item, index }: { item: typeof timeline[0]; index: number
   return (
     <div
       ref={ref}
-      className={`relative flex gap-3 sm:gap-6 pb-8 sm:pb-12 last:pb-0 transition-all duration-700 ${
-        isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-[-20px]"
-      }`}
+      className={`relative flex gap-3 sm:gap-6 pb-8 sm:pb-12 last:pb-0 transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-[-20px]"
+        }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
       {/* Timeline line */}
       <div className="flex flex-col items-center">
         <div
-          className={`w-8 sm:w-10 h-8 sm:h-10 rounded-full flex items-center justify-center shrink-0 ${
-            item.status === "completed"
-              ? "bg-primary text-primary-foreground"
-              : "bg-card border-2 border-primary"
-          }`}
+          className={`w-8 sm:w-10 h-8 sm:h-10 rounded-full flex items-center justify-center shrink-0 ${item.status === "completed"
+            ? "bg-primary text-primary-foreground"
+            : "bg-card border-2 border-primary"
+            }`}
         >
           {item.status === "completed" ? (
             <CheckCircle2 className="h-4 sm:h-5 w-4 sm:w-5" />
@@ -140,9 +114,9 @@ export function TimelineSection() {
             <div className="text-center md:text-left">
               <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Venue</h3>
               <p className="text-sm sm:text-base text-muted-foreground">
-                Galgotias College of Engineering and Technology
+                Galgotias University,
                 <br />
-                Knowledge Park II, Greater Noida, Uttar Pradesh
+                Greater Noida, Uttar Pradesh
               </p>
             </div>
           </div>

@@ -30,12 +30,19 @@ export function RegisterSection() {
             <CardDescription>Don&apos;t miss out on the action! Click below to fill out our official registration form.</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col items-center py-6">
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto text-lg px-8 py-6">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyL7NybUy-xQOUbQXgPRTEG9Iws00Rd64Izt2oyMHvqMp18A/viewform?fbzx=-5573617321677265007" target="_blank" rel="noopener noreferrer">
-                Register Now
-                <Send className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
+            <div className="flex w-full flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+              <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 w-full sm:w-auto text-lg px-8 py-6">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfyL7NybUy-xQOUbQXgPRTEG9Iws00Rd64Izt2oyMHvqMp18A/viewform?fbzx=-5573617321677265007" target="_blank" rel="noopener noreferrer">
+                  Register Now
+                  <Send className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="w-full sm:w-auto text-lg px-8 py-6 border-border hover:bg-accent hover:text-accent-foreground">
+                <a href="https://unstop.com/college-fests/metacognition-tech-venture-unifest-2026-galgotias-college-of-engineering-technology-gcet-greater-noida-454296" target="_blank" rel="noopener noreferrer">
+                  Register on Unstop
+                </a>
+              </Button>
+            </div>
             <p className="text-[10px] sm:text-xs text-muted-foreground text-center mt-6">
               Make sure to select all your desired events inside the form!
             </p>

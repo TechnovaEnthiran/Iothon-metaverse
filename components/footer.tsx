@@ -24,15 +24,15 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-2 text-center sm:text-left">
             <a href="#" className="inline-flex items-center gap-3 mb-3 sm:mb-4">
               <div className="relative">
-                <Bot className="h-6 sm:h-8 w-6 sm:w-8 text-primary" />
+                {/* <Bot className="h-6 sm:h-8 w-6 sm:w-8 text-primary" /> */}
                 <div className="absolute inset-0 bg-primary/30 blur-xl rounded-full" />
               </div>
               <span className="text-lg sm:text-xl font-bold">
-                ENTHIRAN<span className="text-primary">.26</span>
+                ENTHIRAN<span className="text-primary"></span>
               </span>
             </a>
             <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 max-w-sm mx-auto sm:mx-0">
-              The flagship robotics and coding event by Galgotias College of Engineering and Technology. Where innovation meets execution.
+              The flagship robotics and coding club of Galgotias College of Engineering and Technology. Where innovation meets execution.
             </p>
             <div className="flex justify-center sm:justify-start gap-3 sm:gap-4">
               {socialLinks.map((social) => {

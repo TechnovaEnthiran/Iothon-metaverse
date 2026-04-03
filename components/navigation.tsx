@@ -53,7 +53,9 @@ export function Navigation() {
               </a>
             ))}
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Join Now
+              <a href="#register">
+                Register Now
+              </a>
             </Button>
           </div>
 

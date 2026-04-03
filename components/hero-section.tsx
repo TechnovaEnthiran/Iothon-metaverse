@@ -154,7 +154,7 @@ export function HeroSection() {
       </div>
 
       {/* Grid overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.03)_1px,transparent_1px)] bg-[size:50px_50px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(74,222,128,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(74,222,128,0.03)_1px,transparent_1px)] bg-size-[50px_50px]" />
 
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 mb-8">
@@ -176,7 +176,7 @@ export function HeroSection() {
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed px-2">
           Where <span className="text-primary font-semibold">machines</span> meet{" "}
           <span className="text-accent font-semibold">minds</span>. The ultimate robotics and coding
-          showdown at Galgotias College of Engineering and Technology.
+          showdown at Galgotias University.
         </p>
 
         {/* Countdown */}
@@ -200,10 +200,12 @@ export function HeroSection() {
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
           <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+            <a href="#register" target="_blank" rel="noopener noreferrer">
             Register Now
+            </a>
           </Button>
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
-            View Events
+          <Button asChild size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10 text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
+            <a href="#events">View Events</a>
           </Button>
         </div>
       </div>  
